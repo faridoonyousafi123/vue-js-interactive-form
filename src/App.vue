@@ -164,6 +164,11 @@
          submited() {
            this.isSubmitted= true;
          }
+       },
+        computed: {
+         isValidComplaintForm() {
+           return this.userData.mail && this.userData.password && this.userData.age && this.message
+         }
        }
    }
 </script>
